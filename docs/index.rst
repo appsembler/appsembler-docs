@@ -16,9 +16,13 @@ test
 * item 2
 
 
-Websites:
 
-* `Appsembler <http://appsembler.com>`_
+**Useful Links for ReStructuredText**:
+
+* `Syntax <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html>`_
+* `Quick Reference <http://docutils.sourceforge.net/docs/user/rst/quickref.html>`_
+* `Quick Start <http://docutils.sourceforge.net/docs/user/rst/quickstart.html>`_
+
 
 
 .. toctree::
