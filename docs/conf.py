@@ -101,7 +101,8 @@ html_theme = 'bootstrap'
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    'bootswatch_theme': 'united'
+    'bootswatch_theme': 'flatly',
+    'navbar_title': 'Appsembler Wiki',
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
