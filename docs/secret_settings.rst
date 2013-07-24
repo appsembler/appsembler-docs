@@ -56,7 +56,7 @@ show you how to handle secret settings when deploying to OpenShift.
 
 4. **Source secret_keys during deploy**
    
-   Be sure to source the secrey_keys file in every action hook on OpenShift where
+   Be sure to source the secret_keys file in every action hook on OpenShift where
    you have to run something related to Django. To be safe, it would be best to simply
    source it in all action hooks like this:
 
