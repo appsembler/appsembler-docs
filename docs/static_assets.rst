@@ -43,3 +43,20 @@ Serving Django static assets on from OpenShift
         export DJANGO_SETTINGS_MODULE=your.settings.module
         echo "Executing 'django-admin.py collectstatic'"
         django-admin.py collectstatic --noinput --settings=$DJANGO_SETTINGS_MODULE
+
+
+
+Note that the `get_env_variable` mentioned above is defined in the settings.py as:
+
+.. code-block:: python
+
+        from django.core.exceptions import ImproperlyConfigured
+
+
+        def get_env_variable(var_name):
+            """ Get the environment variable or return exception """
+            try:
+                return os.environ[var_name]
+            except KeyError:
+                error_msg = "Set the %s environment variable" % var_name
+                raise ImproperlyConfigured(error_msg)
