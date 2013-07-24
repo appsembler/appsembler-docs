@@ -36,7 +36,7 @@ Serving Django static assets on from OpenShift
 
 4. **Run collectstatic in deploy script**
    
-   Add the following somewhere at the end of your `.openshift/action_hooks/deploy`script:
+   Add the following somewhere at the end of your `.openshift/action_hooks/deploy` script:
 
    .. code-block:: sh
    
