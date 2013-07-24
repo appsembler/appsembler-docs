@@ -22,6 +22,7 @@ Welcome to Appsembler's documentation!
    :maxdepth: 2
 
    newrelic
+   secret_settings
    ssl
    static_assets
 
