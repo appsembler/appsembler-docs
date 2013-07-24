@@ -42,7 +42,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Appsembler'
-copyright = u'2013, Colin Su'
+copyright = u'2013, Colin Su, Filip Jukić, Nate Aune'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -222,7 +222,7 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('index', 'appsembler', u'Appsembler Documentation',
-     [u'Colin Su'], 1)
+     [u'Colin Su', u'Filip Jukić', u'Nate Aune'], 1)
 ]
 
 # If true, show URL addresses after external links.
