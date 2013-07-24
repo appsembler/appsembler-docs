@@ -23,6 +23,7 @@ Welcome to Appsembler's documentation!
 
    flower
    newrelic
+   redis
    secret_settings
    sentry
    ssl
