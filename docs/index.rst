@@ -20,8 +20,9 @@ Welcome to Appsembler's documentation!
 
 .. toctree::
    :maxdepth: 2
-   
+
    newrelic
+   ssl
 
 
 How to update this wiki
