@@ -23,6 +23,7 @@ Welcome to Appsembler's documentation!
 
    newrelic
    secret_settings
+   sentry
    ssl
    static_assets
 
