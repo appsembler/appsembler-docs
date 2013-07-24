@@ -23,6 +23,7 @@ Welcome to Appsembler's documentation!
 
    newrelic
    ssl
+   static_assets
 
 
 How to update this wiki
