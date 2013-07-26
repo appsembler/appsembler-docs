@@ -23,6 +23,7 @@ Welcome to Appsembler's documentation!
 
    flower
    newrelic
+   postgres_backup
    redis
    secret_settings
    sentry
