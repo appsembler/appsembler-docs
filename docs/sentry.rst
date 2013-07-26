@@ -15,7 +15,7 @@ How to set up Sentry on OpenShift
 2. **Get the API key**
    
    Log in into your deployed Sentry instance, create a project and find the 
-   Client configuration->Python option in the settings and copy the `RAVEN_CONFIG` 
+   Client configuration->Python option in the settings and copy the ``RAVEN_CONFIG``
    setting. It should look something like this:
 
    .. code-block:: python
@@ -35,7 +35,7 @@ How to set up Sentry on OpenShift
 
 4. **Set the DSN value in settings.py**
    
-   Paste the `RAVEN_CONFIG` setting you got from the Sentry site to your settings.py file
+   Paste the ``RAVEN_CONFIG`` setting you got from the Sentry site to your settings.py file
 
 5. **Add raven to installed apps**
    

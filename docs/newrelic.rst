@@ -36,7 +36,7 @@ Adding New Relic monitoring to OpenShift
 
 4. **Initialize New Relic library in the WSGI script**
    
-   Add the following code to your wsgi script in `wsgi/application` in your repo 
+   Add the following code to your wsgi script in ``wsgi/application`` in your repo 
    above the part where WSGI application is created:
 
    .. code-block:: python
@@ -52,7 +52,7 @@ Adding New Relic monitoring to OpenShift
 
 5. **(Optional) add New Relic support for Celery**
    
-   Add the following code to your .openshift/action_hooks/post_deploy script:
+   Add the following code to your ``.openshift/action_hooks/post_deploy`` script:
 
    .. code-block:: sh
    

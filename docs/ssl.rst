@@ -13,7 +13,7 @@ SSL for Django apps on OpenShift
 
 2. **Enable HTTPS on the server**
    
-   Add the following lines to your wsgi/.htaccess file:
+   Add the following lines to your ``wsgi/.htaccess`` file:
 
    .. code-block:: apache
    
@@ -24,7 +24,7 @@ SSL for Django apps on OpenShift
 
 3. **Enable HTTPS in the WSGI script**
    
-   Add the following lines to your wsgi/application file:
+   Add the following lines to your ``wsgi/application`` file:
 
    .. code-block:: python
    

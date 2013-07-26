@@ -14,7 +14,7 @@ Saving and restoring applications on OpenShift
    
    You have to create a new application using the same cartridges as the saved app,
    either on a different account or on the same after you delete your app using
-   `rhc app delete <app_name>`. Do so by using the following:
+   ``rhc app delete <app_name>``. Do so by using the following:
 
    .. code-block:: sh
    

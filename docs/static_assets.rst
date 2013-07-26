@@ -4,7 +4,7 @@ Serving Django static assets on from OpenShift
 
 1. **Create a collected_static folder during build**
    
-   Add the following to your `.openshift/action_hooks/build` script:
+   Add the following to your ``.openshift/action_hooks/build`` script:
 
    .. code-block:: sh
    
@@ -14,7 +14,7 @@ Serving Django static assets on from OpenShift
 
 2. **Correctly set up Django settings**
    
-   Make sure your `STATIC_ROOT`, `STATIC_URL` and `STATICFILES_DIR` settings are correctly
+   Make sure your ``STATIC_ROOT``, ``STATIC_URL`` and ``STATICFILES_DIR`` settings are correctly
    set. They should look something like this:
 
    .. code-block:: python
@@ -27,7 +27,7 @@ Serving Django static assets on from OpenShift
 
 3. **Set up apache mod_rewrite**
    
-   Add the following lines to your wsgi/.htaccess file:
+   Add the following lines to your ``wsgi/.htaccess`` file:
 
    .. code-block:: apache
    
@@ -36,7 +36,7 @@ Serving Django static assets on from OpenShift
 
 4. **Run collectstatic in deploy script**
    
-   Add the following somewhere at the end of your `.openshift/action_hooks/deploy` script:
+   Add the following somewhere at the end of your ``.openshift/action_hooks/deploy`` script:
 
    .. code-block:: sh
    
@@ -46,7 +46,7 @@ Serving Django static assets on from OpenShift
 
 
 
-Note that the `get_env_variable` mentioned above is defined in the settings.py as:
+Note that the ``get_env_variable`` mentioned above is defined in the settings.py as:
 
 .. code-block:: python
 
