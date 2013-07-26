@@ -26,6 +26,7 @@ Welcome to Appsembler's documentation!
    redis
    secret_settings
    sentry
+   snapshot
    ssl
    static_assets
 
