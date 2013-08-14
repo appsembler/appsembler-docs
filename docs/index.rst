@@ -30,6 +30,7 @@ Welcome to Appsembler's documentation!
    snapshot
    ssl
    static_assets
+   gitflow
 
 
 How to update this wiki
