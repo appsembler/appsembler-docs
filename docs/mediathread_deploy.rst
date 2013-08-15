@@ -19,6 +19,7 @@ in the Mediathread app:
    
         cd mediathread
         git pull
+        cd ..
         git commit -am "Updated submodule"
         git push
 
