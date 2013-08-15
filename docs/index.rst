@@ -15,6 +15,7 @@ Index
    :maxdepth: 2
 
    flower
+   mediathread_deploy
    newrelic
    postgres_backup
    redis
