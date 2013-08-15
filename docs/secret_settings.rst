@@ -37,24 +37,20 @@ show you how to handle secret settings when deploying to OpenShift.
         export NEW_RELIC_CONFIG_FILE='newrelic.ini'
         export NEW_RELIC_ENVIRONMENT='production'
 
-2. **Get the SSH URL of your deployed app**
+    Put that file in the root of your OpenShift app repository (the one you see when
+    you do ``rhc app show``).
+
+2. **Copy the secret_keys file to the server**
    
-   Run the following command and note what it says in the SSH line:
+   Run the following commands to add the secret_keys to the OpenShift app repo.
 
    .. code-block:: sh
    
-        rhc app show <app_name>
+        git add secret_keys
+        git commit -m "Added secret_keys file"       
+        git push
 
-3. **Copy the secret_keys file to the server**
-   
-   Run the following command to copy the secret_keys to the data folder on 
-   the server that persists the data between deploys:
-
-   .. code-block:: sh
-   
-        scp secret_keys <SSH_URL>:app-root/data
-
-4. **Source secret_keys during deploy**
+3. **Source secret_keys during deploy**
    
    Be sure to source the secret_keys file in every action hook on OpenShift where
    you have to run something related to Django. To be safe, it would be best to simply
@@ -62,4 +58,4 @@ show you how to handle secret settings when deploying to OpenShift.
 
    .. code-block:: sh
    
-        source ${OPENSHIFT_DATA_DIR}secret_keys
+        source ${OPENSHIFT_REPO_DIR}secret_keys
