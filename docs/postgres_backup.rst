@@ -36,8 +36,8 @@ Setting up a periodic PostgreSQL DB dump
 
 3. **Set up cron script**
    
-   Add the following code to your ``.openshift/cron/daily`` folder (or hourly) 
-   if you want more frequent backups:
+   Add the following code to your ``9.openshift/cron/daily`` folder (or hourly 
+   if you want more frequent backups):
 
    .. code-block:: sh
    
